@@ -1,8 +1,26 @@
 aid: heptio
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/heptio.png
 name: Heptio
-description: 'Heptio is a company surfaced as a portfolio company of accel, lightspeed-venture-partners
-  and added to the API Evangelist network as a stub for enrichment. Sector: open-source. This profile
-  is a lead awaiting the enrichment pipeline.'
+description: 'Heptio was a Seattle-based cloud-native software company founded in 2016 by
+  Craig McLuckie and Joe Beda, two of the original co-creators of Kubernetes, to help
+  enterprises adopt and operate Kubernetes. It built a suite of widely used open-source
+  Kubernetes tools including Ark (later renamed Velero) for backup and restore, Sonobuoy
+  for conformance testing, Contour as an Envoy-based ingress controller, ksonnet, and
+  Gimbal. Heptio was acquired by VMware in November 2018 and folded into the VMware Tanzu
+  portfolio; the company brand was retired and most of its open-source projects were
+  migrated from the github.com/heptio organization to github.com/vmware-tanzu. This
+  profile is preserved as a historical/defunct-company record in the API Evangelist network.'
 url: https://raw.githubusercontent.com/api-evangelist/heptio/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,12 +29,22 @@ x-backed-by:
 - lightspeed-venture-partners
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-status: defunct
+x-acquired-by: vmware
+x-acquired-date: '2018-11'
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
 - Open Source
+- Kubernetes
+- Cloud Native
+- Containers
+- DevOps
+- Infrastructure
+- Defunct
+- Acquired
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -24,5 +52,14 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/heptio-domain-security.yml
+- type: GitHubOrganization
+  url: https://github.com/heptio
 - type: Website
   url: http://www.heptio.com
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
