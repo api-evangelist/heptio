@@ -12,15 +12,13 @@ accessModel:
   method: derived
 image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/heptio.png
 name: Heptio
-description: 'Heptio was a Seattle-based cloud-native software company founded in 2016 by
-  Craig McLuckie and Joe Beda, two of the original co-creators of Kubernetes, to help
-  enterprises adopt and operate Kubernetes. It built a suite of widely used open-source
-  Kubernetes tools including Ark (later renamed Velero) for backup and restore, Sonobuoy
-  for conformance testing, Contour as an Envoy-based ingress controller, ksonnet, and
-  Gimbal. Heptio was acquired by VMware in November 2018 and folded into the VMware Tanzu
-  portfolio; the company brand was retired and most of its open-source projects were
-  migrated from the github.com/heptio organization to github.com/vmware-tanzu. This
-  profile is preserved as a historical/defunct-company record in the API Evangelist network.'
+description: Heptio was a Seattle-based cloud-native software company founded in 2016 by Craig McLuckie and Joe
+  Beda, two of the original co-creators of Kubernetes, to help enterprises adopt and operate Kubernetes. It built
+  a suite of widely used open-source Kubernetes tools including Ark (later renamed Velero) for backup and restore,
+  Sonobuoy for conformance testing, Contour as an Envoy-based ingress controller, ksonnet, and Gimbal. Heptio was
+  acquired by VMware in November 2018 and folded into the VMware Tanzu portfolio; the company brand was retired
+  and most of its open-source projects were migrated from the github.com/heptio organization to github.com/vmware-tanzu.
+  This profile is preserved as a historical/defunct-company record in the API Evangelist network.
 url: https://raw.githubusercontent.com/api-evangelist/heptio/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -31,10 +29,10 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 x-status: defunct
 x-acquired-by: vmware
-x-acquired-date: '2018-11'
+x-acquired-date: 2018-11
 specificationVersion: '0.23'
 created: '2026-07-17'
-modified: '2026-07-19'
+modified: '2026-08-21'
 tags:
 - Company
 - Open-Source
@@ -62,6 +60,12 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: ParentCompany
+  url: https://apis.io/providers/vmware/
+  name: VMware
+  x-relationship: acquisition
+  x-generated-by: broadcom-family:2026-08-21
+  x-acquired: 2018
 - type: DomainSecurity
   url: security/heptio-domain-security.yml
 - type: GitHubOrganization
@@ -73,3 +77,6 @@ x-enrichment:
   status: backfilled
   pass: local-v1
   note: backfilled from .gitignore signal + verified work evidence
+x-parent: vmware
+x-relationship: acquisition
+x-acquired: 2018
