@@ -46,7 +46,7 @@ created: '2026-07-17'
 modified: '2026-08-21'
 tags:
 - Company
-- Open-Source
+- Open Source
 - Kubernetes
 - Cloud-Native
 - Containers
@@ -64,6 +64,7 @@ tags_raw:
 - Infrastructure
 - Defunct
 - Acquired
+- Open-Source
 apis: []
 maintainers:
 - FN: Kin Lane
